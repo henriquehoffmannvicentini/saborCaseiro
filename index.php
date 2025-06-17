@@ -1,6 +1,3 @@
-$primary   #9E6B23
-
-
 
 <?php
  
