@@ -1,7 +1,7 @@
 <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/banner1.png" class="d-block w-100" alt="Banner 1">
+      <img src="img/banner1.png" class="d-block w-100 " alt="Banner 1">
     </div>
     <div class="carousel-item">
       <img src="imagens/b2.webp" class="d-block w-100" alt="Banner 2">
@@ -13,11 +13,11 @@
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
+    <span class="visually-hidden" style="color: #000;">Next</span>
   </button>
 </div>
 
-<h2 class="text-center">
+<h2 class="text-center mt-5 mb-4 text-white">
     Produtos em Destaque
 </h2>
 
@@ -38,8 +38,9 @@
                         <div class='card'>
                             <img src='{$valor['foto']}' class='w-100'>
                             <p>{$valor['nome']}</p>
+                            <p><strong>R$ {$valor['valor']}</strong></p>
                             <p>
-                                <a href='produto/{$id}' class='btn btn-danger'>Detalhes</a>
+                                <a href='produto/{$id}' class='btn btn-danger'>encomendar</a>
                             </p>
                         </div>
                     </div>";

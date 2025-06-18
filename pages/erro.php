@@ -1,7 +1,16 @@
-<h1 class="text-center">
+<h1 class="text-center text-white mt-5 mb-4">
     Erro 404
 </h1>
-<h2 class="text-center">
+<style>
+@media (max-width: 576px) {
+    img.img-erro {
+        width: 90vw;
+        height: auto;
+        max-width: 100%;
+    }
+}
+</style>
+<h2 class="text-center text-white">
     A página que você está tentando acessar
     não existe ou foi removida!
 </h2>
