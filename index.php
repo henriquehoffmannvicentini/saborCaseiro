@@ -68,12 +68,8 @@
             include "pages/erro.php";
         }
     ?>
-    <style>
-      body {
-      background-image: url('img/background.jpg');
-        background-size: cover;
-      }
-    </style>
+    
+    
 </main>
 
 <footer class="bg-dark text-white p-3 mt-5">
