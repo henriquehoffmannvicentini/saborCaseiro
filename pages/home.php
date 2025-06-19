@@ -35,7 +35,7 @@
                     ))
                 ) {
                     echo "<div class='col-12 col-md-3 '>
-                        <div class='card bg-warning p-2 text-dark bg-opacity-10  mb-3'>
+                        <div class='card  p-2 text-dark  mb-3'>
                             <img src='{$valor['foto']}' class='w-100'>
                             <p>{$valor['nome']}</p>
                             <p><strong>R$ {$valor['valor']}</strong></p>
