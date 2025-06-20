@@ -1,9 +1,9 @@
 <?php
 $produtos = [
     [ 'nome' => 'Bolo de Cenoura', 'foto' => 'bolo-cenoura.jpg', 'valor' => 60.00, 'destaque' => false ],
-    [ 'nome' => 'Bolo de Amendoim', 'foto' => 'bolo-amendoim.jpg', 'valor' => 60.00, 'destaque' => false ],
+    [ 'nome' => 'Bolo de fubá', 'foto' => 'bolo-fuba.jpg', 'valor' => 60.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de KitKat', 'foto' => 'bolo-kitkat.jpg', 'valor' => 65.00, 'destaque' => false ],
-    [ 'nome' => 'Bolo de Marshmallow', 'foto' => 'bolo-marshmallow.jpg', 'valor' => 40.00, 'destaque' => false ],
+    [ 'nome' => 'Bolo de laranja', 'foto' => 'bolo-laranja.jpg', 'valor' => 40.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Abacaxi com Coco', 'foto' => 'bolo-abacaxi-com-coco.jpg', 'valor' => 45.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Prestígio', 'foto' => 'bolo-prestígio.jpg', 'valor' => 50.00, 'destaque' => true ],
     [ 'nome' => 'Bolo de Frutas Vermelhas', 'foto' => 'bolo-frutas-vermelhas.jpg', 'valor' => 60.00, 'destaque' => false ],
@@ -26,7 +26,7 @@ $produtos = [
     [ 'nome' => 'Bolo de Chocolate com Morango', 'foto' => 'bolo-chocolate-morango.jpg', 'valor' => 60.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Maracujá Trufado', 'foto' => 'bolo-maracuja-trufado.jpg', 'valor' => 65.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Ninho com Nutella', 'foto' => 'bolo-ninho-nutella.jpg', 'valor' => 65.00, 'destaque' => true ],
-    [ 'nome' => 'Bolo de Paçoca com Chocolate', 'foto' => 'bolo-pacoca-chocolate.jpg', 'valor' => 50.00, 'destaque' => false ],
+    [ 'nome' => 'Bolo de avelã', 'foto' => 'bolo-avelã.jpg', 'valor' => 50.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Limão com Merengue', 'foto' => 'bolo-limao-merengue.jpg', 'valor' => 65.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Chocolate Branco', 'foto' => 'bolo-chocolate-branco.jpg', 'valor' => 45.00, 'destaque' => false ],
     [ 'nome' => 'Bolo de Caramelo', 'foto' => 'bolo-caramelo.jpg', 'valor' => 40.00, 'destaque' => false ],

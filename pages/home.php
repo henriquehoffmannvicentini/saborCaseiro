@@ -23,33 +23,34 @@
 
 <div class="row mb-5  ">
     <?php
-    
-        if (!empty($produtos)) {
-            foreach ($produtos as $id => $valor) {
-                
-                if (
-                    (isset($valor["destaque"]) && (
-                        strtolower($valor["destaque"]) === "sim" ||
-                        $valor["destaque"] === true ||
-                        $valor["destaque"] === 1 ||
-                        $valor["destaque"] === "1"
-                    ))
-                ) {
-                    echo "<div class='col-12 col-md-3 '>
-                        <div class='card  p-2 text-dark  mb-3'>
-                            <img src='{$valor['foto']}' class='w-100'>
-                            <p>{$valor['nome']}</p>
-                            <p><strong>R$ {$valor['valor']}</strong></p>
-                            <p>
-                                <a href='produto/{$id}' class='btn btn-danger'>encomendar</a>
-                            </p>
-                        </div>
-                    </div>";
-                }
-            }
-        } else {
-            echo "<p class='text-center'>Nenhum produto em destaque encontrado.</p>";
+
+      if (!empty($produtos)) {
+        foreach ($produtos as $id => $valor) {
+          
+          if (
+            (isset($valor["destaque"]) && (
+              strtolower($valor["destaque"]) === "sim" ||
+              $valor["destaque"] === true ||
+              $valor["destaque"] === 1 ||
+              $valor["destaque"] === "1"
+            ))
+          ) {
+            echo "<div class='col-12 col-md-3 '>
+              <div class='card  p-2 text-dark  mb-3'>
+                <img src='{$valor['foto']}' class='w-100'>
+                <p>{$valor['nome']}</p>
+                <p><strong>R$ " . number_format($valor['valor'], 2, ',', '.') . "</strong></p>
+                <p>
+                  <a href='produto/{$id}' class='btn btn-danger'>encomendar</a>
+                </p>
+              </div>
+            </div>";
+          }
         }
+      } else {
+        echo "<p class='text-center'>Nenhum produto em destaque encontrado.</p>";
+      }
+    ?>
         
     ?>
 </div>
