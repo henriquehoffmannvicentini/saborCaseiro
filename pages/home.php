@@ -23,6 +23,7 @@
 
 <div class="row mb-5  ">
     <?php
+    
         if (!empty($produtos)) {
             foreach ($produtos as $id => $valor) {
                 
@@ -49,5 +50,6 @@
         } else {
             echo "<p class='text-center'>Nenhum produto em destaque encontrado.</p>";
         }
+        
     ?>
 </div>
