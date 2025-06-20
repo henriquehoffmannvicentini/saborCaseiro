@@ -18,7 +18,7 @@
 </div>
 
 <h2 class="text-center mt-5 mb-4 ">
-    Produtos em Destaque
+    Bolos em Destaque
 </h2>
 
 <div class="row mb-5  ">
