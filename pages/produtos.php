@@ -1,5 +1,4 @@
 <?php
-// Incluir o arquivo do array de produtos
 include "array.php";
 ?>
 
