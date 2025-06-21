@@ -7,7 +7,7 @@ include "array.php";
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo de Produtos</title>
+    <title>Catálogo de Bolos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <style>
@@ -43,7 +43,7 @@ include "array.php";
     </style>
 </head>
 <body>
-    <h2 class="text-center mt-5 mb-4">Catálogo de Produtos</h2>
+    <h2 class="text-center mt-5 mb-4">Catálogo de Bolos</h2>
     <div class="catalogo">
         <?php foreach ($produtos as $id => $produto): ?>
             <div class="produto">
