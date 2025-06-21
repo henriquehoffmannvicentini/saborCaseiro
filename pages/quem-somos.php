@@ -22,13 +22,7 @@
 }
 
 @media (max-width: 700px) {
-    .quem-somos {
-        flex-direction: column;
-        text-align: center;
-    }
-    .quem-somos img, .quem-somos-texto {
-        order: unset;
-    }
+    
 }
 
 .localizacao {
@@ -48,7 +42,7 @@
     height: 450px;
     border: 0;
 }
-@media (min-width: 701px) {
+@media (min-width: 700px) {
     .localizacao {
         flex-direction: row;
         gap: 40px;
@@ -69,6 +63,7 @@
         flex-direction: column;
         justify-content: center;
     }
+    
 }
 
 </style>

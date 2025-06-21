@@ -16,11 +16,7 @@ h2{
     }
 }
 
-.button.carousel-control-prev,
-.button.carousel-control-next {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-}
+
 
 body {
     background-color: #FFF9E6;

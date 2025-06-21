@@ -50,7 +50,7 @@ include "array.php";
                 <h3><?php echo htmlspecialchars($produto['nome']); ?></h3>
                 <p>R$ <?php echo number_format($produto['valor'], 2, ',', '.'); ?></p>
                 <p>
-                      <a href='produto/<?php echo $id; ?>' class='btn btn-danger mb-4'>encomendar</a>
+                      <a href='produto/<?php echo $id; ?>' class='btn btn-danger mb-4 mt-4'>encomendar</a>
                 </p>
             </div>
         <?php endforeach; ?>
