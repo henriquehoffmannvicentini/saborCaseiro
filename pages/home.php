@@ -37,7 +37,7 @@
           ) {
             echo "<div class='col-12 col-md-3 '>
               <div class='card  p-2 text-dark  mb-3'>
-                <img src='{$valor['foto']}' class='w-100'>
+               <img src='img/{$valor['foto']}' class='card-img-top' alt='{$valor['nome']}'>
                 <p>{$valor['nome']}</p>
                 <p><strong>R$ " . number_format($valor['valor'], 2, ',', '.') . "</strong></p>
                 <p>

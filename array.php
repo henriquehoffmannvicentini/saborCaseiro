@@ -23,21 +23,21 @@ $produtos = [
     ],
     [ 
         'nome' => 'Bolo de Trufado', 
-        'foto' => 'bolo-trufado.jpg', 
+        'foto' => 'bolo-trufado.avif', 
         'valor' => 60.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: farinha de trigo, açúcar, ovos, chocolate em pó, leite, manteiga, creme de leite, chocolate meio amargo, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Oreo', 
-        'foto' => 'bolo-oreo.jpg', 
+        'foto' => 'bolo-oreo.avif', 
         'valor' => 55.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: biscoito Oreo, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Doce de Leite', 
-        'foto' => 'bolo-doce-de-leite.jpg', 
+        'foto' => 'bolo-doce-de-leite.avif', 
         'valor' => 60.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: doce de leite, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
@@ -58,21 +58,21 @@ $produtos = [
     ],
     [ 
         'nome' => 'Bolo de Limão', 
-        'foto' => 'bolo-limao.jpg', 
+        'foto' => 'bolo-limao.avif', 
         'valor' => 60.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: suco de limão, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Morango', 
-        'foto' => 'bolo-morango.jpg', 
+        'foto' => 'bolo-morango.webp', 
         'valor' => 42.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: morango, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Banana', 
-        'foto' => 'bolo-banana.jpg', 
+        'foto' => 'bolo-banana.webp', 
         'valor' => 48.00, 
         'destaque' => true,
         'descricao' => 'Ingredientes: banana, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
@@ -86,7 +86,7 @@ $produtos = [
     ],
     [ 
         'nome' => 'Bolo de Red Velvet', 
-        'foto' => 'bolo-red-velvet.jpg', 
+        'foto' => 'bolo-red-velvet.avif', 
         'valor' => 50.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: farinha de trigo, açúcar, ovos, manteiga, cacau em pó, corante vermelho, leite, fermento em pó, cream cheese.'
@@ -107,42 +107,42 @@ $produtos = [
     ],
     [ 
         'nome' => 'Bolo de Coco', 
-        'foto' => 'bolo-coco.jpg', 
+        'foto' => 'bolo-coco.webp', 
         'valor' => 45.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: coco ralado, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Chocolate com Morango', 
-        'foto' => 'bolo-chocolate-morango.jpg', 
+        'foto' => 'bolo-chocolate-morango.webp', 
         'valor' => 60.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: chocolate em pó, morango, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Maracujá Trufado', 
-        'foto' => 'bolo-maracuja-trufado.jpg', 
+        'foto' => 'bolo-maracuja-trufado.webp', 
         'valor' => 65.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: suco de maracujá, chocolate branco, farinha de trigo, açúcar, ovos, leite, manteiga, creme de leite, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Ninho com Nutella', 
-        'foto' => 'bolo-ninho-nutella.jpg', 
+        'foto' => 'bolo-ninho-nutella.webp', 
         'valor' => 65.00, 
         'destaque' => true,
         'descricao' => 'Ingredientes: leite em pó, creme de avelã, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de avelã', 
-        'foto' => 'bolo-avelã.jpg', 
+        'foto' => 'bolo-avela.jpeg', 
         'valor' => 50.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: avelã, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Limão com Merengue', 
-        'foto' => 'bolo-limao-merengue.jpg', 
+        'foto' => 'bolo-limao-merengue.avif', 
         'valor' => 65.00, 
         'destaque' => false,
         'descricao' => 'Ingredientes: suco de limão, farinha de trigo, açúcar, ovos, leite, manteiga, merengue, fermento em pó.'
@@ -164,7 +164,7 @@ $produtos = [
     
     [ 
         'nome' => 'Bolo de Abacaxi', 
-        'foto' => 'bolo-abacaxi.jpg', 
+        'foto' => 'bolo-abacaxi.webp', 
         'valor' => 55.00, 
         'destaque' => true,
         'descricao' => 'Ingredientes: abacaxi, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
