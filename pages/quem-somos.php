@@ -6,12 +6,49 @@
     gap: 40px;
     max-width: 900px;
     margin: 40px auto;
-    h2{
-        text-align: center;
-        margin-bottom: 20px;
-        width: 100%;
-        order: -1;
     }
+
+    @media (max-width: 700px) {
+        .quem-somos {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .quem-somos img {
+            order: 0;
+            max-width: 200px;
+            border-radius: 30px;
+            margin: 0 auto;
+        }
+        .quem-somos-texto {
+            order: 1;
+            width: 100%;
+            text-align: center;
+        }
+        .quem-somos-texto h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .localizacao {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+        .localizacao iframe {
+            width: 100%;
+            height: 300px;
+            min-width: unset;
+        }
+        .localizacao-texto {
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            display: block;
+        }
 }
 .quem-somos img {
     max-width: 300px;
