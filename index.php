@@ -72,11 +72,11 @@
     
 </main>
 
-<footer class="bg-dark text-white p-3 mt-5">
-    <p class="text-center">
-        Sabor Caseiro - Todos os direitos reservados 
-        
-    </p>
+<footer class="bg-dark text-white p-3 mt-1 ">
+  <p class="text-center mb-0">
+    Sabor Caseiro - Todos os direitos reservados 
+  </p>
+</footer>
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

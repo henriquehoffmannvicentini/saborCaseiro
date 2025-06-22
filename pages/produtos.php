@@ -46,7 +46,7 @@ include "array.php";
     <div class="catalogo">
         <?php foreach ($produtos as $id => $produto): ?>
             <div class="produto">
-                <img src="<?php echo $produto['foto']; ?>" alt="<?php echo htmlspecialchars($produto['nome']); ?>">
+                 <img src="img/<?=$produto['foto']?>" class="card-img-top" alt="<?=$produto['nome']?>">
                 <h3><?php echo htmlspecialchars($produto['nome']); ?></h3>
                 <p>R$ <?php echo number_format($produto['valor'], 2, ',', '.'); ?></p>
                 <p>
