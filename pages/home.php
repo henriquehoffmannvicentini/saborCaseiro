@@ -36,10 +36,12 @@
             ))
           ) {
             echo "<div class='col-12 col-md-3 '>
-              <div class='card  p-2 text-dark  mb-3'>
-               <img src='img/{$valor['foto']}' class='card-img-top' alt='{$valor['nome']}'>
-                <p>{$valor['nome']}</p>
-                <p><strong>R$ " . number_format($valor['valor'], 2, ',', '.') . "</strong></p>
+              <div class='card p-2 text-dark mb-3 h-100' style='min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;'>
+                <img src='img/{$valor['foto']}' class='card-img-top' alt='{$valor['nome']}' style='height: 200px; object-fit: cover;'>
+                <div>
+                  <p>{$valor['nome']}</p>
+                  <p class='mt-2'><strong>R$ " . number_format($valor['valor'], 2, ',', '.') . "</strong></p>
+                </div>
                 <p>
                   <a href='produto/{$id}' class='btn btn-danger'>encomendar</a>
                 </p>

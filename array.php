@@ -130,7 +130,7 @@ $produtos = [
         'nome' => 'Bolo de Ninho com Nutella', 
         'foto' => 'bolo-ninho-nutella.webp', 
         'valor' => 65.00, 
-        'destaque' => true,
+        'destaque' => false,
         'descricao' => 'Ingredientes: leite em pó, creme de avelã, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
@@ -151,14 +151,14 @@ $produtos = [
         'nome' => 'Bolo de Chocolate Branco', 
         'foto' => 'bolo-chocolate-branco.jpg', 
         'valor' => 45.00, 
-        'destaque' => false,
+        'destaque' => true,
         'descricao' => 'Ingredientes: chocolate branco, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     [ 
         'nome' => 'Bolo de Caramelo', 
         'foto' => 'bolo-caramelo.jpg', 
         'valor' => 40.00, 
-        'destaque' => false,
+        'destaque' => true,
         'descricao' => 'Ingredientes: caramelo, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
     
@@ -166,7 +166,7 @@ $produtos = [
         'nome' => 'Bolo de Abacaxi', 
         'foto' => 'bolo-abacaxi.webp', 
         'valor' => 55.00, 
-        'destaque' => true,
+        'destaque' => false,
         'descricao' => 'Ingredientes: abacaxi, farinha de trigo, açúcar, ovos, leite, manteiga, fermento em pó.'
     ],
    

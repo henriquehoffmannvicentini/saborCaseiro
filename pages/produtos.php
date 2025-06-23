@@ -39,10 +39,21 @@ include "array.php";
             margin: 0;
             color: #333;
         }
+         @media (max-width: 600px) {
+            .catalogo {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .produto {
+                flex: 1 0 100%;
+                margin-bottom: 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <h2 class="text-center mt-5 mb-4">Catálogo de Bolos</h2>
+    
     <div class="catalogo">
         <?php foreach ($produtos as $id => $produto): ?>
             <div class="produto">
