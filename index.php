@@ -1,7 +1,7 @@
 
 <?php
- 
- $base = $_SERVER['SERVER_NAME'] . $_SERVER['SCRIPT_NAME'];
+
+ $base ="https://{$_SERVER['SERVER_NAME']}{$_SERVER['SCRIPT_NAME']}";
 
 ?>
 
