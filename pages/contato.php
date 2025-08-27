@@ -7,56 +7,108 @@
 </style>
 
 
-
 <section id="contato" class="container my-5">
     <h2 class="text-center mb-4">Fale Conosco</h2>
-    <form action="enviar.php" method="post">
+    <form id="formContato" action="enviar.php" method="post" novalidate>
+        
+        <!-- DADOS DO CLIENTE -->
+        <h4 class="mb-3">Dados do Cliente</h4>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="nome">Nome completo</label>
-                <input type="text" class="form-control" id="nome" name="nome" required>
+                <input type="text" class="form-control" id="nome" name="nome" required minlength="3">
+                <div class="invalid-feedback">Digite seu nome completo (mínimo 3 caracteres).</div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="cpf">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf" 
+                       required pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" placeholder="000.000.000-00">
+                <div class="invalid-feedback">Digite um CPF válido (000.000.000-00).</div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="celular">Celular</label>
+                <input type="tel" class="form-control" id="celular" name="celular" 
+                       required pattern="^\(\d{2}\)\s?\d{4,5}-\d{4}$" placeholder="(99) 99999-9999">
+                <div class="invalid-feedback">Digite um celular válido no formato (99) 99999-9999.</div>
+            </div>
+        </div>
+
+        <!-- ENDEREÇO -->
+        <h4 class="mb-3 mt-4">Endereço de Entrega</h4>
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" id="cep" name="cep" 
+                       required pattern="^\d{5}-\d{3}$" placeholder="00000-000">
+                <div class="invalid-feedback">Digite um CEP válido (00000-000).</div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado" class="form-control" required>
+                    <option value="">Selecione...</option>
+                    <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option>
+                    <option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option>
+                    <option value="DF">DF</option><option value="ES">ES</option><option value="GO">GO</option>
+                    <option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                    <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option>
+                    <option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option>
+                    <option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option>
+                    <option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                    <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                </select>
+                <div class="invalid-feedback">Selecione um estado.</div>
             </div>
             <div class="form-group col-md-6">
-                <label for="email">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="municipio">Município</label>
+                <input type="text" class="form-control" id="municipio" name="municipio" required>
+                <div class="invalid-feedback">Informe o município.</div>
             </div>
         </div>
 
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="telefone">Telefone</label>
-                <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            <div class="form-group col-md-4">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro" name="bairro" required>
+                <div class="invalid-feedback">Informe o bairro.</div>
             </div>
-            <div class="form-group col-md-6">
-                <label for="assunto">Assunto</label>
-                <input type="text" class="form-control" id="assunto" name="assunto" required>
+            <div class="form-group col-md-5">
+                <label for="rua">Rua</label>
+                <input type="text" class="form-control" id="rua" name="rua" required>
+                <div class="invalid-feedback">Informe a rua.</div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="numero">Número</label>
+                <input type="text" class="form-control" id="numero" name="numero" required>
+                <div class="invalid-feedback">Informe o número.</div>
             </div>
         </div>
 
-        <div class="form-group">
-            <label for="endereco">Endereço de entrega</label>
-            <input type="text" class="form-control" id="endereco" name="endereco" required>
-        </div>
-
-        <div class="form-group">
-            <label for="mensagem">Mensagem / Observações</label>
-            <textarea class="form-control" id="mensagem" name="mensagem" required rows="4" ></textarea>
-        </div>
-
-        <button  type="submit" class="btn btn-danger mb-3 mt-4">Enviar</button>
+        <button type="submit" class="btn btn-danger mb-3 mt-4">Enviar</button>
     </form>
 </section>
 
-
-<h2 class="text-center my-4">Obrigado pelo seu contato!</h2>
-
 <script>
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault(); // 
-    alert("Mensagem enviada com sucesso!");
-    this.reset(); // 
-    
+document.getElementById("formContato").addEventListener("submit", function(event) {
+    if (!this.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+    } else {
+        event.preventDefault();
+        alert("Mensagem enviada com sucesso!");
+        this.reset();
+    }
+    this.classList.add("was-validated");
 });
 
-
+document.getElementById("celular").addEventListener("input", function(e) {
+    let v = e.target.value.replace(/\D/g, ""); // só números
+    if (v.length > 11) v = v.slice(0, 11);
+    if (v.length > 6) {
+        e.target.value = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+    } else if (v.length > 2) {
+        e.target.value = `(${v.slice(0,2)}) ${v.slice(2)}`;
+    } else {
+        e.target.value = v;
+    }
+});
 </script>
